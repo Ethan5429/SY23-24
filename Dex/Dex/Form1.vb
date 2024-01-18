@@ -1,5 +1,4 @@
 ﻿Imports System.IO
-Imports System.Web
 
 Public Class Form1
     Dim records(50) As String
@@ -23,6 +22,9 @@ Public Class Form1
     End Sub
 
     Private Sub SaveToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SaveToolStripMenuItem.Click
+        SaveToFile()
+    End Sub
+    Sub SaveToFile()
         Dim r As String
         r += Field1.Text
         r += "|"
@@ -35,10 +37,8 @@ Public Class Form1
         r += Field5.Text
         r += "|"
         r += PictureBox1.ImageLocation
+        If count = 0 Then count = 1
         records(current) = r
-        SaveToFile()
-    End Sub
-    Sub SaveToFile()
         Dim outFile As New StreamWriter("Data.txt")
         For index = 0 To count - 1
             outFile.WriteLine(records(index))
@@ -58,6 +58,7 @@ Public Class Form1
         End If
     End Sub
     Public Sub ShowRecord(index As Integer)
+        PictureBox1.Image = Nothing
         If records(index) <> Nothing Then
             Dim Fields() As String
             Fields = records(index).Split("|")
@@ -73,11 +74,13 @@ Public Class Form1
     End Sub
 
     Private Sub FirstButton_Click(sender As Object, e As EventArgs) Handles FirstButton.Click
+        SaveToFile()
         current = 0
         ShowRecord(current)
     End Sub
 
     Private Sub PrevButton_Click(sender As Object, e As EventArgs) Handles PrevButton.Click
+        SaveToFile()
         If current > 0 Then
             current = current - 1
         End If
@@ -85,6 +88,7 @@ Public Class Form1
     End Sub
 
     Private Sub NextButton_Click(sender As Object, e As EventArgs) Handles NextButton.Click
+        SaveToFile()
         If current < count - 1 Then
             current = current + 1
         End If
@@ -92,7 +96,10 @@ Public Class Form1
     End Sub
 
     Private Sub LastButton_Click(sender As Object, e As EventArgs) Handles LastButton.Click
-        current = count - 1
-        ShowRecord(current)
+        SaveToFile()
+        If count > 0 Then
+            current = count - 1
+            ShowRecord(current)
+        End If
     End Sub
 End Class
