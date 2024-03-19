@@ -1,39 +1,25 @@
 ﻿Public Class Frm2DPlatformer
     Dim movespeed As Integer = 15
     Dim isJumping As Boolean
-    Private Sub Frm2DPlatformer_KeyDown(sender As Object, e As KeyEventArgs) Handles Me.KeyDown
+    Dim score As Integer = 0
+    Private Sub Frm2DPlatformer_KeyDown(sender As Object, e As KeyEventArgs) Handles TextBox1.KeyDown
         Select Case e.KeyCode
             Case Keys.Right
                 tmrRight.Start()
-            Case Keys.D
-                tmrRight.Start()
             Case Keys.Left
-                tmrLeft.Start()
-            Case Keys.A
                 tmrLeft.Start()
             Case Keys.Up
                 tmrUp.Start()
                 isJumping = True
-            Case Keys.W
-                tmrUp.Start()
-                isJumping = True
-
         End Select
     End Sub
-    Private Sub Frm2DPlatformer_KeyUp(sender As Object, e As KeyEventArgs) Handles Me.KeyUp
+    Private Sub Frm2DPlatformer_KeyUp(sender As Object, e As KeyEventArgs) Handles TextBox1.KeyUp
         Select Case e.KeyCode
             Case Keys.Right
                 tmrRight.Stop()
-            Case Keys.D
-                tmrRight.Stop()
             Case Keys.Left
                 tmrLeft.Stop()
-            Case Keys.A
-                tmrLeft.Stop()
             Case Keys.Up
-                tmrUp.Stop()
-                isJumping = False
-            Case Keys.W
                 tmrUp.Stop()
                 isJumping = False
         End Select
@@ -79,11 +65,17 @@
                     End If
                 End If
                 If b.Tag = "enemy" Then
-                    If picPlayer.Bounds.IntersectsWith(b.Bounds) Then
-                        tmrGravity.Stop()
-                        picPlayer.Visible = False
-                        Label2.Text = "You Lose"
-                        Label2.Visible = True
+                    If picPlayer.Bounds.IntersectsWith(b.Bounds) And b.Visible = True Then
+                        b.Visible = False
+                        score -= 1
+                        Label3.Text = score
+                    End If
+                End If
+                If b.Tag = "coin" Then
+                    If picPlayer.Bounds.IntersectsWith(b.Bounds) And b.Visible = True Then
+                        b.Visible = False
+                        score += 1
+                        Label3.Text = score
                     End If
                 End If
             End If

@@ -30,6 +30,9 @@ Partial Class Frm2DPlatformer
         Me.tmrGravity = New System.Windows.Forms.Timer(Me.components)
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.Mover1 = New Platformer_Game.Mover()
+        Me.PictureBox11 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox12 = New System.Windows.Forms.PictureBox()
         Me.PictureBox10 = New System.Windows.Forms.PictureBox()
         Me.PictureBox9 = New System.Windows.Forms.PictureBox()
         Me.PictureBox8 = New System.Windows.Forms.PictureBox()
@@ -43,8 +46,18 @@ Partial Class Frm2DPlatformer
         Me.picPlayer = New System.Windows.Forms.PictureBox()
         Me.picGround = New System.Windows.Forms.PictureBox()
         Me.picAir = New System.Windows.Forms.PictureBox()
-        Me.Mover1 = New Platformer_Game.Mover()
-        Me.PictureBox11 = New System.Windows.Forms.PictureBox()
+        Me.Mover2 = New Platformer_Game.Mover()
+        Me.PictureBox13 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox14 = New System.Windows.Forms.PictureBox()
+        Me.Mover3 = New Platformer_Game.Mover()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.Mover4 = New Platformer_Game.Mover()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.PictureBox15 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox16 = New System.Windows.Forms.PictureBox()
+        CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox12, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -58,7 +71,10 @@ Partial Class Frm2DPlatformer
         CType(Me.picPlayer, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picGround, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picAir, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox14, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox15, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox16, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'tmrRight
@@ -100,12 +116,45 @@ Partial Class Frm2DPlatformer
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 28.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label2.Location = New System.Drawing.Point(294, 347)
+        Me.Label2.Location = New System.Drawing.Point(282, 377)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(219, 54)
         Me.Label2.TabIndex = 9
         Me.Label2.Text = "You Win!"
         Me.Label2.Visible = False
+        '
+        'Mover1
+        '
+        Me.Mover1.BackColor = System.Drawing.Color.Transparent
+        Me.Mover1.interval = 100
+        Me.Mover1.Location = New System.Drawing.Point(313, 377)
+        Me.Mover1.Name = "Mover1"
+        Me.Mover1.Size = New System.Drawing.Size(351, 197)
+        Me.Mover1.speed = 10
+        Me.Mover1.sprite = Me.PictureBox11
+        Me.Mover1.TabIndex = 15
+        '
+        'PictureBox11
+        '
+        Me.PictureBox11.BackColor = System.Drawing.Color.Red
+        Me.PictureBox11.Location = New System.Drawing.Point(410, 575)
+        Me.PictureBox11.Name = "PictureBox11"
+        Me.PictureBox11.Size = New System.Drawing.Size(70, 67)
+        Me.PictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox11.TabIndex = 16
+        Me.PictureBox11.TabStop = False
+        Me.PictureBox11.Tag = "enemy"
+        '
+        'PictureBox12
+        '
+        Me.PictureBox12.Image = Global.Platformer_Game.My.Resources.Resources.coin
+        Me.PictureBox12.Location = New System.Drawing.Point(293, 552)
+        Me.PictureBox12.Name = "PictureBox12"
+        Me.PictureBox12.Size = New System.Drawing.Size(56, 50)
+        Me.PictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox12.TabIndex = 17
+        Me.PictureBox12.TabStop = False
+        Me.PictureBox12.Tag = "coin"
         '
         'PictureBox10
         '
@@ -121,7 +170,7 @@ Partial Class Frm2DPlatformer
         'PictureBox9
         '
         Me.PictureBox9.BackColor = System.Drawing.Color.Red
-        Me.PictureBox9.Location = New System.Drawing.Point(380, 154)
+        Me.PictureBox9.Location = New System.Drawing.Point(361, 193)
         Me.PictureBox9.Name = "PictureBox9"
         Me.PictureBox9.Size = New System.Drawing.Size(83, 18)
         Me.PictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -132,7 +181,7 @@ Partial Class Frm2DPlatformer
         'PictureBox8
         '
         Me.PictureBox8.BackColor = System.Drawing.Color.Red
-        Me.PictureBox8.Location = New System.Drawing.Point(538, 312)
+        Me.PictureBox8.Location = New System.Drawing.Point(537, 351)
         Me.PictureBox8.Name = "PictureBox8"
         Me.PictureBox8.Size = New System.Drawing.Size(251, 17)
         Me.PictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -154,7 +203,7 @@ Partial Class Frm2DPlatformer
         'PictureBox6
         '
         Me.PictureBox6.BackColor = System.Drawing.Color.Red
-        Me.PictureBox6.Location = New System.Drawing.Point(380, 168)
+        Me.PictureBox6.Location = New System.Drawing.Point(361, 207)
         Me.PictureBox6.Name = "PictureBox6"
         Me.PictureBox6.Size = New System.Drawing.Size(15, 148)
         Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -185,7 +234,7 @@ Partial Class Frm2DPlatformer
         'PictureBox3
         '
         Me.PictureBox3.BackColor = System.Drawing.Color.Goldenrod
-        Me.PictureBox3.Location = New System.Drawing.Point(310, 312)
+        Me.PictureBox3.Location = New System.Drawing.Point(291, 351)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(203, 18)
         Me.PictureBox3.TabIndex = 5
@@ -215,7 +264,7 @@ Partial Class Frm2DPlatformer
         'picPlayer
         '
         Me.picPlayer.BackColor = System.Drawing.Color.Blue
-        Me.picPlayer.Location = New System.Drawing.Point(344, 577)
+        Me.picPlayer.Location = New System.Drawing.Point(104, 577)
         Me.picPlayer.Name = "picPlayer"
         Me.picPlayer.Size = New System.Drawing.Size(85, 82)
         Me.picPlayer.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -240,27 +289,109 @@ Partial Class Frm2DPlatformer
         Me.picAir.TabIndex = 1
         Me.picAir.TabStop = False
         '
-        'Mover1
+        'Mover2
         '
-        Me.Mover1.BackColor = System.Drawing.Color.Transparent
-        Me.Mover1.interval = 100
-        Me.Mover1.Location = New System.Drawing.Point(380, 395)
-        Me.Mover1.Name = "Mover1"
-        Me.Mover1.Size = New System.Drawing.Size(351, 197)
-        Me.Mover1.speed = 10
-        Me.Mover1.sprite = Me.PictureBox11
-        Me.Mover1.TabIndex = 15
+        Me.Mover2.BackColor = System.Drawing.Color.Transparent
+        Me.Mover2.interval = 100
+        Me.Mover2.Location = New System.Drawing.Point(313, 392)
+        Me.Mover2.Name = "Mover2"
+        Me.Mover2.Size = New System.Drawing.Size(351, 197)
+        Me.Mover2.speed = 20
+        Me.Mover2.sprite = Me.PictureBox12
+        Me.Mover2.TabIndex = 18
         '
-        'PictureBox11
+        'PictureBox13
         '
-        Me.PictureBox11.BackColor = System.Drawing.Color.Red
-        Me.PictureBox11.Location = New System.Drawing.Point(739, 574)
-        Me.PictureBox11.Name = "PictureBox11"
-        Me.PictureBox11.Size = New System.Drawing.Size(70, 67)
-        Me.PictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox11.TabIndex = 16
-        Me.PictureBox11.TabStop = False
-        Me.PictureBox11.Tag = "enemy"
+        Me.PictureBox13.BackColor = System.Drawing.Color.Red
+        Me.PictureBox13.Location = New System.Drawing.Point(6, 19)
+        Me.PictureBox13.Name = "PictureBox13"
+        Me.PictureBox13.Size = New System.Drawing.Size(17, 125)
+        Me.PictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox13.TabIndex = 19
+        Me.PictureBox13.TabStop = False
+        Me.PictureBox13.Tag = "enemy"
+        '
+        'PictureBox14
+        '
+        Me.PictureBox14.BackColor = System.Drawing.Color.Red
+        Me.PictureBox14.Location = New System.Drawing.Point(2, 214)
+        Me.PictureBox14.Name = "PictureBox14"
+        Me.PictureBox14.Size = New System.Drawing.Size(37, 37)
+        Me.PictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox14.TabIndex = 20
+        Me.PictureBox14.TabStop = False
+        Me.PictureBox14.Tag = "enemy"
+        '
+        'Mover3
+        '
+        Me.Mover3.BackColor = System.Drawing.Color.Transparent
+        Me.Mover3.interval = 100
+        Me.Mover3.Location = New System.Drawing.Point(16, 19)
+        Me.Mover3.Name = "Mover3"
+        Me.Mover3.Size = New System.Drawing.Size(571, 10)
+        Me.Mover3.speed = 10
+        Me.Mover3.sprite = Me.PictureBox13
+        Me.Mover3.TabIndex = 21
+        '
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(329, 675)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(100, 22)
+        Me.TextBox1.TabIndex = 22
+        '
+        'Mover4
+        '
+        Me.Mover4.BackColor = System.Drawing.Color.Transparent
+        Me.Mover4.interval = 100
+        Me.Mover4.Location = New System.Drawing.Point(12, 154)
+        Me.Mover4.Name = "Mover4"
+        Me.Mover4.Size = New System.Drawing.Size(160, 277)
+        Me.Mover4.speed = 10
+        Me.Mover4.sprite = Me.PictureBox14
+        Me.Mover4.TabIndex = 23
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(716, 16)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(24, 25)
+        Me.Label3.TabIndex = 24
+        Me.Label3.Text = "0"
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(638, 16)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(76, 25)
+        Me.Label4.TabIndex = 25
+        Me.Label4.Text = "Score:"
+        '
+        'PictureBox15
+        '
+        Me.PictureBox15.Image = Global.Platformer_Game.My.Resources.Resources.coin
+        Me.PictureBox15.Location = New System.Drawing.Point(76, 305)
+        Me.PictureBox15.Name = "PictureBox15"
+        Me.PictureBox15.Size = New System.Drawing.Size(56, 50)
+        Me.PictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox15.TabIndex = 26
+        Me.PictureBox15.TabStop = False
+        Me.PictureBox15.Tag = "coin"
+        '
+        'PictureBox16
+        '
+        Me.PictureBox16.Image = Global.Platformer_Game.My.Resources.Resources.coin
+        Me.PictureBox16.Location = New System.Drawing.Point(371, 78)
+        Me.PictureBox16.Name = "PictureBox16"
+        Me.PictureBox16.Size = New System.Drawing.Size(58, 51)
+        Me.PictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox16.TabIndex = 27
+        Me.PictureBox16.TabStop = False
+        Me.PictureBox16.Tag = "coin"
         '
         'Frm2DPlatformer
         '
@@ -268,6 +399,14 @@ Partial Class Frm2DPlatformer
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.PaleTurquoise
         Me.ClientSize = New System.Drawing.Size(800, 746)
+        Me.Controls.Add(Me.PictureBox16)
+        Me.Controls.Add(Me.PictureBox15)
+        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.PictureBox14)
+        Me.Controls.Add(Me.PictureBox13)
+        Me.Controls.Add(Me.PictureBox12)
         Me.Controls.Add(Me.PictureBox11)
         Me.Controls.Add(Me.PictureBox10)
         Me.Controls.Add(Me.PictureBox9)
@@ -284,9 +423,14 @@ Partial Class Frm2DPlatformer
         Me.Controls.Add(Me.picPlayer)
         Me.Controls.Add(Me.picGround)
         Me.Controls.Add(Me.Mover1)
+        Me.Controls.Add(Me.Mover2)
+        Me.Controls.Add(Me.Mover3)
+        Me.Controls.Add(Me.Mover4)
         Me.Controls.Add(Me.picAir)
         Me.Name = "Frm2DPlatformer"
         Me.Text = "Form1"
+        CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox12, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
@@ -300,7 +444,10 @@ Partial Class Frm2DPlatformer
         CType(Me.picPlayer, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picGround, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picAir, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox14, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox15, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox16, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -328,4 +475,15 @@ Partial Class Frm2DPlatformer
     Friend WithEvents PictureBox9 As PictureBox
     Friend WithEvents Mover1 As Mover
     Friend WithEvents PictureBox11 As PictureBox
+    Friend WithEvents PictureBox12 As PictureBox
+    Friend WithEvents Mover2 As Mover
+    Friend WithEvents PictureBox13 As PictureBox
+    Friend WithEvents PictureBox14 As PictureBox
+    Friend WithEvents Mover3 As Mover
+    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents Mover4 As Mover
+    Friend WithEvents Label3 As Label
+    Friend WithEvents Label4 As Label
+    Friend WithEvents PictureBox15 As PictureBox
+    Friend WithEvents PictureBox16 As PictureBox
 End Class
