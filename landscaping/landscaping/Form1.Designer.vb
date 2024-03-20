@@ -44,6 +44,16 @@ Partial Class Form1
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
+        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox2 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox3 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox4 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox5 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox6 = New System.Windows.Forms.CheckBox()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.perimeterTB = New System.Windows.Forms.TextBox()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.priceTB = New System.Windows.Forms.TextBox()
         CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NumericUpDown2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NumericUpDown3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -56,21 +66,21 @@ Partial Class Form1
         '
         'widthTB
         '
-        Me.widthTB.Location = New System.Drawing.Point(73, 90)
+        Me.widthTB.Location = New System.Drawing.Point(93, 19)
         Me.widthTB.Name = "widthTB"
         Me.widthTB.Size = New System.Drawing.Size(100, 22)
         Me.widthTB.TabIndex = 0
         '
         'lengthTB
         '
-        Me.lengthTB.Location = New System.Drawing.Point(73, 148)
+        Me.lengthTB.Location = New System.Drawing.Point(93, 46)
         Me.lengthTB.Name = "lengthTB"
         Me.lengthTB.Size = New System.Drawing.Size(100, 22)
         Me.lengthTB.TabIndex = 1
         '
         'areaTB
         '
-        Me.areaTB.Location = New System.Drawing.Point(73, 199)
+        Me.areaTB.Location = New System.Drawing.Point(93, 73)
         Me.areaTB.Name = "areaTB"
         Me.areaTB.ReadOnly = True
         Me.areaTB.Size = New System.Drawing.Size(100, 22)
@@ -80,7 +90,7 @@ Partial Class Form1
         'RadioButton1
         '
         Me.RadioButton1.AutoSize = True
-        Me.RadioButton1.Location = New System.Drawing.Point(216, 75)
+        Me.RadioButton1.Location = New System.Drawing.Point(267, 12)
         Me.RadioButton1.Name = "RadioButton1"
         Me.RadioButton1.Size = New System.Drawing.Size(68, 20)
         Me.RadioButton1.TabIndex = 3
@@ -91,7 +101,7 @@ Partial Class Form1
         'RadioButton2
         '
         Me.RadioButton2.AutoSize = True
-        Me.RadioButton2.Location = New System.Drawing.Point(355, 75)
+        Me.RadioButton2.Location = New System.Drawing.Point(394, 12)
         Me.RadioButton2.Name = "RadioButton2"
         Me.RadioButton2.Size = New System.Drawing.Size(60, 20)
         Me.RadioButton2.TabIndex = 4
@@ -102,7 +112,7 @@ Partial Class Form1
         'RadioButton3
         '
         Me.RadioButton3.AutoSize = True
-        Me.RadioButton3.Location = New System.Drawing.Point(492, 75)
+        Me.RadioButton3.Location = New System.Drawing.Point(513, 12)
         Me.RadioButton3.Name = "RadioButton3"
         Me.RadioButton3.Size = New System.Drawing.Size(64, 20)
         Me.RadioButton3.TabIndex = 5
@@ -113,7 +123,7 @@ Partial Class Form1
         'RadioButton4
         '
         Me.RadioButton4.AutoSize = True
-        Me.RadioButton4.Location = New System.Drawing.Point(635, 75)
+        Me.RadioButton4.Location = New System.Drawing.Point(636, 12)
         Me.RadioButton4.Name = "RadioButton4"
         Me.RadioButton4.Size = New System.Drawing.Size(98, 20)
         Me.RadioButton4.TabIndex = 6
@@ -123,28 +133,28 @@ Partial Class Form1
         '
         'NumericUpDown1
         '
-        Me.NumericUpDown1.Location = New System.Drawing.Point(154, 269)
+        Me.NumericUpDown1.Location = New System.Drawing.Point(161, 140)
         Me.NumericUpDown1.Name = "NumericUpDown1"
         Me.NumericUpDown1.Size = New System.Drawing.Size(57, 22)
         Me.NumericUpDown1.TabIndex = 7
         '
         'NumericUpDown2
         '
-        Me.NumericUpDown2.Location = New System.Drawing.Point(154, 297)
+        Me.NumericUpDown2.Location = New System.Drawing.Point(161, 168)
         Me.NumericUpDown2.Name = "NumericUpDown2"
         Me.NumericUpDown2.Size = New System.Drawing.Size(57, 22)
         Me.NumericUpDown2.TabIndex = 8
         '
         'NumericUpDown3
         '
-        Me.NumericUpDown3.Location = New System.Drawing.Point(154, 325)
+        Me.NumericUpDown3.Location = New System.Drawing.Point(161, 196)
         Me.NumericUpDown3.Name = "NumericUpDown3"
         Me.NumericUpDown3.Size = New System.Drawing.Size(57, 22)
         Me.NumericUpDown3.TabIndex = 9
         '
         'NumericUpDown4
         '
-        Me.NumericUpDown4.Location = New System.Drawing.Point(154, 353)
+        Me.NumericUpDown4.Location = New System.Drawing.Point(161, 224)
         Me.NumericUpDown4.Name = "NumericUpDown4"
         Me.NumericUpDown4.Size = New System.Drawing.Size(57, 22)
         Me.NumericUpDown4.TabIndex = 10
@@ -152,7 +162,7 @@ Partial Class Form1
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(19, 93)
+        Me.Label1.Location = New System.Drawing.Point(22, 19)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(44, 16)
         Me.Label1.TabIndex = 11
@@ -161,7 +171,7 @@ Partial Class Form1
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(19, 150)
+        Me.Label2.Location = New System.Drawing.Point(22, 46)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(50, 16)
         Me.Label2.TabIndex = 12
@@ -170,7 +180,7 @@ Partial Class Form1
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(17, 205)
+        Me.Label3.Location = New System.Drawing.Point(22, 73)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(39, 16)
         Me.Label3.TabIndex = 13
@@ -179,15 +189,15 @@ Partial Class Form1
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(46, 273)
+        Me.Label4.Location = New System.Drawing.Point(19, 140)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(48, 16)
+        Me.Label4.Size = New System.Drawing.Size(122, 16)
         Me.Label4.TabIndex = 14
-        Me.Label4.Text = "Label4"
+        Me.Label4.Text = "Small Plant Amount"
         '
         'PictureBox1
         '
-        Me.PictureBox1.Location = New System.Drawing.Point(226, 124)
+        Me.PictureBox1.Location = New System.Drawing.Point(267, 53)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(100, 50)
         Me.PictureBox1.TabIndex = 15
@@ -195,7 +205,7 @@ Partial Class Form1
         '
         'PictureBox2
         '
-        Me.PictureBox2.Location = New System.Drawing.Point(368, 122)
+        Me.PictureBox2.Location = New System.Drawing.Point(394, 53)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(100, 50)
         Me.PictureBox2.TabIndex = 16
@@ -203,7 +213,7 @@ Partial Class Form1
         '
         'PictureBox3
         '
-        Me.PictureBox3.Location = New System.Drawing.Point(505, 118)
+        Me.PictureBox3.Location = New System.Drawing.Point(513, 53)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(100, 50)
         Me.PictureBox3.TabIndex = 17
@@ -211,7 +221,7 @@ Partial Class Form1
         '
         'PictureBox4
         '
-        Me.PictureBox4.Location = New System.Drawing.Point(643, 116)
+        Me.PictureBox4.Location = New System.Drawing.Point(636, 53)
         Me.PictureBox4.Name = "PictureBox4"
         Me.PictureBox4.Size = New System.Drawing.Size(100, 50)
         Me.PictureBox4.TabIndex = 18
@@ -220,35 +230,141 @@ Partial Class Form1
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(46, 361)
+        Me.Label5.Location = New System.Drawing.Point(19, 224)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(48, 16)
+        Me.Label5.Size = New System.Drawing.Size(84, 16)
         Me.Label5.TabIndex = 21
-        Me.Label5.Text = "Label5"
+        Me.Label5.Text = "Tree Amount"
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(46, 337)
+        Me.Label6.Location = New System.Drawing.Point(19, 196)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(48, 16)
+        Me.Label6.Size = New System.Drawing.Size(123, 16)
         Me.Label6.TabIndex = 20
-        Me.Label6.Text = "Label6"
+        Me.Label6.Text = "Large Plant Amount"
         '
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(46, 303)
+        Me.Label7.Location = New System.Drawing.Point(19, 168)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(48, 16)
+        Me.Label7.Size = New System.Drawing.Size(136, 16)
         Me.Label7.TabIndex = 19
-        Me.Label7.Text = "Label7"
+        Me.Label7.Text = "Medium Plant Amount"
+        '
+        'CheckBox1
+        '
+        Me.CheckBox1.AutoSize = True
+        Me.CheckBox1.Location = New System.Drawing.Point(270, 138)
+        Me.CheckBox1.Name = "CheckBox1"
+        Me.CheckBox1.Size = New System.Drawing.Size(97, 20)
+        Me.CheckBox1.TabIndex = 22
+        Me.CheckBox1.Text = "CheckBox1"
+        Me.CheckBox1.UseVisualStyleBackColor = True
+        '
+        'CheckBox2
+        '
+        Me.CheckBox2.AutoSize = True
+        Me.CheckBox2.Location = New System.Drawing.Point(270, 164)
+        Me.CheckBox2.Name = "CheckBox2"
+        Me.CheckBox2.Size = New System.Drawing.Size(97, 20)
+        Me.CheckBox2.TabIndex = 23
+        Me.CheckBox2.Text = "CheckBox2"
+        Me.CheckBox2.UseVisualStyleBackColor = True
+        '
+        'CheckBox3
+        '
+        Me.CheckBox3.AutoSize = True
+        Me.CheckBox3.Location = New System.Drawing.Point(270, 189)
+        Me.CheckBox3.Name = "CheckBox3"
+        Me.CheckBox3.Size = New System.Drawing.Size(97, 20)
+        Me.CheckBox3.TabIndex = 24
+        Me.CheckBox3.Text = "CheckBox3"
+        Me.CheckBox3.UseVisualStyleBackColor = True
+        '
+        'CheckBox4
+        '
+        Me.CheckBox4.AutoSize = True
+        Me.CheckBox4.Location = New System.Drawing.Point(270, 215)
+        Me.CheckBox4.Name = "CheckBox4"
+        Me.CheckBox4.Size = New System.Drawing.Size(97, 20)
+        Me.CheckBox4.TabIndex = 25
+        Me.CheckBox4.Text = "CheckBox4"
+        Me.CheckBox4.UseVisualStyleBackColor = True
+        '
+        'CheckBox5
+        '
+        Me.CheckBox5.AutoSize = True
+        Me.CheckBox5.Location = New System.Drawing.Point(270, 241)
+        Me.CheckBox5.Name = "CheckBox5"
+        Me.CheckBox5.Size = New System.Drawing.Size(97, 20)
+        Me.CheckBox5.TabIndex = 26
+        Me.CheckBox5.Text = "CheckBox5"
+        Me.CheckBox5.UseVisualStyleBackColor = True
+        '
+        'CheckBox6
+        '
+        Me.CheckBox6.AutoSize = True
+        Me.CheckBox6.Location = New System.Drawing.Point(270, 267)
+        Me.CheckBox6.Name = "CheckBox6"
+        Me.CheckBox6.Size = New System.Drawing.Size(97, 20)
+        Me.CheckBox6.TabIndex = 27
+        Me.CheckBox6.Text = "CheckBox6"
+        Me.CheckBox6.UseVisualStyleBackColor = True
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Location = New System.Drawing.Point(22, 100)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(68, 16)
+        Me.Label8.TabIndex = 29
+        Me.Label8.Text = "Perimeter:"
+        '
+        'perimeterTB
+        '
+        Me.perimeterTB.Location = New System.Drawing.Point(93, 100)
+        Me.perimeterTB.Name = "perimeterTB"
+        Me.perimeterTB.ReadOnly = True
+        Me.perimeterTB.Size = New System.Drawing.Size(100, 22)
+        Me.perimeterTB.TabIndex = 28
+        Me.perimeterTB.Text = "0"
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Location = New System.Drawing.Point(337, 375)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(41, 16)
+        Me.Label9.TabIndex = 31
+        Me.Label9.Text = "Price:"
+        '
+        'priceTB
+        '
+        Me.priceTB.Location = New System.Drawing.Point(384, 375)
+        Me.priceTB.Name = "priceTB"
+        Me.priceTB.ReadOnly = True
+        Me.priceTB.Size = New System.Drawing.Size(100, 22)
+        Me.priceTB.TabIndex = 30
+        Me.priceTB.Text = "0"
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.Label9)
+        Me.Controls.Add(Me.priceTB)
+        Me.Controls.Add(Me.Label8)
+        Me.Controls.Add(Me.perimeterTB)
+        Me.Controls.Add(Me.CheckBox6)
+        Me.Controls.Add(Me.CheckBox5)
+        Me.Controls.Add(Me.CheckBox4)
+        Me.Controls.Add(Me.CheckBox3)
+        Me.Controls.Add(Me.CheckBox2)
+        Me.Controls.Add(Me.CheckBox1)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label7)
@@ -308,4 +424,14 @@ Partial Class Form1
     Friend WithEvents Label5 As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents Label7 As Label
+    Friend WithEvents CheckBox1 As CheckBox
+    Friend WithEvents CheckBox2 As CheckBox
+    Friend WithEvents CheckBox3 As CheckBox
+    Friend WithEvents CheckBox4 As CheckBox
+    Friend WithEvents CheckBox5 As CheckBox
+    Friend WithEvents CheckBox6 As CheckBox
+    Friend WithEvents Label8 As Label
+    Friend WithEvents perimeterTB As TextBox
+    Friend WithEvents Label9 As Label
+    Friend WithEvents priceTB As TextBox
 End Class
