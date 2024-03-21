@@ -19,20 +19,16 @@
         End If
     End Sub
 
-    Private Sub RadioButton_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton1.CheckedChanged, RadioButton2.CheckedChanged, RadioButton3.CheckedChanged, RadioButton4.CheckedChanged
+    Private Sub calcButton_Click(sender As Object, e As EventArgs) Handles calcButton.Click
         If RadioButton1.Checked = True Then
-            price += area * 1
+            price += area * 1.5
         ElseIf RadioButton2.Checked = True Then
-            price += area * 2
+            price += area * 10
         ElseIf RadioButton3.Checked = True Then
-            price += area * 3
+            price += area * 0.5
         ElseIf RadioButton4.Checked = True Then
-            price += area * 4
+            price += area * 12
         End If
-        priceTB.Text = price
-        RadioButton1.Enabled = False
-        RadioButton2.Enabled = False
-        RadioButton3.Enabled = False
-        RadioButton4.Enabled = False
+        priceTB.Text = price.ToString("C2")
     End Sub
 End Class

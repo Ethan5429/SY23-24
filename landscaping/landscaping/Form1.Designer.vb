@@ -54,6 +54,7 @@ Partial Class Form1
         Me.perimeterTB = New System.Windows.Forms.TextBox()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.priceTB = New System.Windows.Forms.TextBox()
+        Me.calcButton = New System.Windows.Forms.Button()
         CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NumericUpDown2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NumericUpDown3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -259,9 +260,9 @@ Partial Class Form1
         Me.CheckBox1.AutoSize = True
         Me.CheckBox1.Location = New System.Drawing.Point(270, 138)
         Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(97, 20)
+        Me.CheckBox1.Size = New System.Drawing.Size(57, 20)
         Me.CheckBox1.TabIndex = 22
-        Me.CheckBox1.Text = "CheckBox1"
+        Me.CheckBox1.Text = "Pool"
         Me.CheckBox1.UseVisualStyleBackColor = True
         '
         'CheckBox2
@@ -269,9 +270,9 @@ Partial Class Form1
         Me.CheckBox2.AutoSize = True
         Me.CheckBox2.Location = New System.Drawing.Point(270, 164)
         Me.CheckBox2.Name = "CheckBox2"
-        Me.CheckBox2.Size = New System.Drawing.Size(97, 20)
+        Me.CheckBox2.Size = New System.Drawing.Size(127, 20)
         Me.CheckBox2.TabIndex = 23
-        Me.CheckBox2.Text = "CheckBox2"
+        Me.CheckBox2.Text = "Basketball Court"
         Me.CheckBox2.UseVisualStyleBackColor = True
         '
         'CheckBox3
@@ -279,9 +280,9 @@ Partial Class Form1
         Me.CheckBox3.AutoSize = True
         Me.CheckBox3.Location = New System.Drawing.Point(270, 189)
         Me.CheckBox3.Name = "CheckBox3"
-        Me.CheckBox3.Size = New System.Drawing.Size(97, 20)
+        Me.CheckBox3.Size = New System.Drawing.Size(74, 20)
         Me.CheckBox3.TabIndex = 24
-        Me.CheckBox3.Text = "CheckBox3"
+        Me.CheckBox3.Text = "Garden"
         Me.CheckBox3.UseVisualStyleBackColor = True
         '
         'CheckBox4
@@ -289,9 +290,9 @@ Partial Class Form1
         Me.CheckBox4.AutoSize = True
         Me.CheckBox4.Location = New System.Drawing.Point(270, 215)
         Me.CheckBox4.Name = "CheckBox4"
-        Me.CheckBox4.Size = New System.Drawing.Size(97, 20)
+        Me.CheckBox4.Size = New System.Drawing.Size(98, 20)
         Me.CheckBox4.TabIndex = 25
-        Me.CheckBox4.Text = "CheckBox4"
+        Me.CheckBox4.Text = "Playground"
         Me.CheckBox4.UseVisualStyleBackColor = True
         '
         'CheckBox5
@@ -299,9 +300,9 @@ Partial Class Form1
         Me.CheckBox5.AutoSize = True
         Me.CheckBox5.Location = New System.Drawing.Point(270, 241)
         Me.CheckBox5.Name = "CheckBox5"
-        Me.CheckBox5.Size = New System.Drawing.Size(97, 20)
+        Me.CheckBox5.Size = New System.Drawing.Size(66, 20)
         Me.CheckBox5.TabIndex = 26
-        Me.CheckBox5.Text = "CheckBox5"
+        Me.CheckBox5.Text = "Firepit"
         Me.CheckBox5.UseVisualStyleBackColor = True
         '
         'CheckBox6
@@ -309,9 +310,9 @@ Partial Class Form1
         Me.CheckBox6.AutoSize = True
         Me.CheckBox6.Location = New System.Drawing.Point(270, 267)
         Me.CheckBox6.Name = "CheckBox6"
-        Me.CheckBox6.Size = New System.Drawing.Size(97, 20)
+        Me.CheckBox6.Size = New System.Drawing.Size(77, 20)
         Me.CheckBox6.TabIndex = 27
-        Me.CheckBox6.Text = "CheckBox6"
+        Me.CheckBox6.Text = "Hot Tub"
         Me.CheckBox6.UseVisualStyleBackColor = True
         '
         'Label8
@@ -350,11 +351,21 @@ Partial Class Form1
         Me.priceTB.TabIndex = 30
         Me.priceTB.Text = "0"
         '
+        'calcButton
+        '
+        Me.calcButton.Location = New System.Drawing.Point(333, 312)
+        Me.calcButton.Name = "calcButton"
+        Me.calcButton.Size = New System.Drawing.Size(75, 23)
+        Me.calcButton.TabIndex = 32
+        Me.calcButton.Text = "Calculate"
+        Me.calcButton.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.calcButton)
         Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.priceTB)
         Me.Controls.Add(Me.Label8)
@@ -434,4 +445,5 @@ Partial Class Form1
     Friend WithEvents perimeterTB As TextBox
     Friend WithEvents Label9 As Label
     Friend WithEvents priceTB As TextBox
+    Friend WithEvents calcButton As Button
 End Class
