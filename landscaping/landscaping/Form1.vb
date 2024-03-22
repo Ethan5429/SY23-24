@@ -21,6 +21,7 @@
 
     Private Sub calcButton_Click(sender As Object, e As EventArgs) Handles calcButton.Click
         spaceLabel.Visible = False
+        price = 0
         If widthTB.Text <> "" And lengthTB.Text <> "" Then
             width = widthTB.Text
             length = lengthTB.Text

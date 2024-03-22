@@ -135,28 +135,28 @@ Partial Class Form1
         '
         'NumericUpDown1
         '
-        Me.NumericUpDown1.Location = New System.Drawing.Point(161, 140)
+        Me.NumericUpDown1.Location = New System.Drawing.Point(169, 140)
         Me.NumericUpDown1.Name = "NumericUpDown1"
         Me.NumericUpDown1.Size = New System.Drawing.Size(57, 22)
         Me.NumericUpDown1.TabIndex = 7
         '
         'NumericUpDown2
         '
-        Me.NumericUpDown2.Location = New System.Drawing.Point(161, 168)
+        Me.NumericUpDown2.Location = New System.Drawing.Point(169, 168)
         Me.NumericUpDown2.Name = "NumericUpDown2"
         Me.NumericUpDown2.Size = New System.Drawing.Size(57, 22)
         Me.NumericUpDown2.TabIndex = 8
         '
         'NumericUpDown3
         '
-        Me.NumericUpDown3.Location = New System.Drawing.Point(161, 196)
+        Me.NumericUpDown3.Location = New System.Drawing.Point(169, 196)
         Me.NumericUpDown3.Name = "NumericUpDown3"
         Me.NumericUpDown3.Size = New System.Drawing.Size(57, 22)
         Me.NumericUpDown3.TabIndex = 9
         '
         'NumericUpDown4
         '
-        Me.NumericUpDown4.Location = New System.Drawing.Point(161, 224)
+        Me.NumericUpDown4.Location = New System.Drawing.Point(169, 224)
         Me.NumericUpDown4.Name = "NumericUpDown4"
         Me.NumericUpDown4.Size = New System.Drawing.Size(57, 22)
         Me.NumericUpDown4.TabIndex = 10
@@ -360,7 +360,7 @@ Partial Class Form1
         '
         Me.calcButton.Location = New System.Drawing.Point(350, 307)
         Me.calcButton.Name = "calcButton"
-        Me.calcButton.Size = New System.Drawing.Size(75, 23)
+        Me.calcButton.Size = New System.Drawing.Size(81, 23)
         Me.calcButton.TabIndex = 32
         Me.calcButton.Text = "Calculate"
         Me.calcButton.UseVisualStyleBackColor = True
