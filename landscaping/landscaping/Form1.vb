@@ -3,7 +3,7 @@
     Dim perimeter As Integer
     Dim length As Integer
     Dim width As Integer
-    Dim price As Integer = 0
+    Dim price As Decimal = 0
     Private Sub TB_TextChanged(sender As Object, e As EventArgs) Handles widthTB.TextChanged, lengthTB.TextChanged
         If widthTB.Text <> "" And lengthTB.Text <> "" Then
             width = widthTB.Text
@@ -20,6 +20,45 @@
     End Sub
 
     Private Sub calcButton_Click(sender As Object, e As EventArgs) Handles calcButton.Click
+        spaceLabel.Visible = False
+        If widthTB.Text <> "" And lengthTB.Text <> "" Then
+            width = widthTB.Text
+            length = lengthTB.Text
+            area = (width * length)
+            perimeter = ((width * 2) + length)
+        Else area = 0
+            perimeter = 0
+        End If
+
+        If CheckBox1.Checked = True Then
+            If area > 500 Then
+                area -= 500
+                price += 50000
+            Else
+                spaceLabel.Visible = True
+            End If
+        ElseIf CheckBox2.Checked = True Then
+            If area > 2000 Then
+                area -= 2000
+                price += 2500
+            Else
+                spaceLabel.Visible = True
+            End If
+        ElseIf CheckBox3.Checked = True Then
+            price += 2000
+        ElseIf CheckBox4.Checked = True Then
+            price += 1000
+        ElseIf CheckBox5.Checked = True Then
+            price += 1250
+        ElseIf CheckBox6.Checked = True Then
+            price += 5000
+        End If
+
+        price += NumericUpDown1.Value
+        price += NumericUpDown2.Value * 5
+        price += NumericUpDown3.Value * 10
+        price += NumericUpDown4.Value * 200
+
         If RadioButton1.Checked = True Then
             price += area * 1.5
         ElseIf RadioButton2.Checked = True Then

@@ -55,6 +55,7 @@ Partial Class Form1
         Me.Label9 = New System.Windows.Forms.Label()
         Me.priceTB = New System.Windows.Forms.TextBox()
         Me.calcButton = New System.Windows.Forms.Button()
+        Me.spaceLabel = New System.Windows.Forms.Label()
         CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NumericUpDown2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NumericUpDown3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -198,6 +199,7 @@ Partial Class Form1
         '
         'PictureBox1
         '
+        Me.PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.PictureBox1.Location = New System.Drawing.Point(267, 53)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(100, 50)
@@ -206,6 +208,7 @@ Partial Class Form1
         '
         'PictureBox2
         '
+        Me.PictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.PictureBox2.Location = New System.Drawing.Point(394, 53)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(100, 50)
@@ -214,6 +217,7 @@ Partial Class Form1
         '
         'PictureBox3
         '
+        Me.PictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.PictureBox3.Location = New System.Drawing.Point(513, 53)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(100, 50)
@@ -222,6 +226,7 @@ Partial Class Form1
         '
         'PictureBox4
         '
+        Me.PictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.PictureBox4.Location = New System.Drawing.Point(636, 53)
         Me.PictureBox4.Name = "PictureBox4"
         Me.PictureBox4.Size = New System.Drawing.Size(100, 50)
@@ -353,18 +358,30 @@ Partial Class Form1
         '
         'calcButton
         '
-        Me.calcButton.Location = New System.Drawing.Point(333, 312)
+        Me.calcButton.Location = New System.Drawing.Point(350, 307)
         Me.calcButton.Name = "calcButton"
         Me.calcButton.Size = New System.Drawing.Size(75, 23)
         Me.calcButton.TabIndex = 32
         Me.calcButton.Text = "Calculate"
         Me.calcButton.UseVisualStyleBackColor = True
         '
+        'spaceLabel
+        '
+        Me.spaceLabel.AutoSize = True
+        Me.spaceLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 19.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.spaceLabel.Location = New System.Drawing.Point(120, 333)
+        Me.spaceLabel.Name = "spaceLabel"
+        Me.spaceLabel.Size = New System.Drawing.Size(602, 39)
+        Me.spaceLabel.TabIndex = 33
+        Me.spaceLabel.Text = "Not enough space for selected items"
+        Me.spaceLabel.Visible = False
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.spaceLabel)
         Me.Controls.Add(Me.calcButton)
         Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.priceTB)
@@ -446,4 +463,5 @@ Partial Class Form1
     Friend WithEvents Label9 As Label
     Friend WithEvents priceTB As TextBox
     Friend WithEvents calcButton As Button
+    Friend WithEvents spaceLabel As Label
 End Class
