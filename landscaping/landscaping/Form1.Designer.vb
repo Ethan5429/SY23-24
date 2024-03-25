@@ -22,6 +22,7 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.widthTB = New System.Windows.Forms.TextBox()
         Me.lengthTB = New System.Windows.Forms.TextBox()
         Me.areaTB = New System.Windows.Forms.TextBox()
@@ -222,36 +223,44 @@ Partial Class Form1
         'PictureBox1
         '
         Me.PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
         Me.PictureBox1.Location = New System.Drawing.Point(282, 39)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(100, 65)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox1.TabIndex = 15
         Me.PictureBox1.TabStop = False
         '
         'PictureBox2
         '
         Me.PictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
         Me.PictureBox2.Location = New System.Drawing.Point(412, 39)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(100, 65)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox2.TabIndex = 16
         Me.PictureBox2.TabStop = False
         '
         'PictureBox3
         '
         Me.PictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), System.Drawing.Image)
         Me.PictureBox3.Location = New System.Drawing.Point(543, 39)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(100, 65)
+        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox3.TabIndex = 17
         Me.PictureBox3.TabStop = False
         '
         'PictureBox4
         '
         Me.PictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.PictureBox4.Image = CType(resources.GetObject("PictureBox4.Image"), System.Drawing.Image)
         Me.PictureBox4.Location = New System.Drawing.Point(679, 39)
         Me.PictureBox4.Name = "PictureBox4"
         Me.PictureBox4.Size = New System.Drawing.Size(100, 65)
+        Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox4.TabIndex = 18
         Me.PictureBox4.TabStop = False
         '
@@ -373,7 +382,7 @@ Partial Class Form1
         'priceTB
         '
         Me.priceTB.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.priceTB.Location = New System.Drawing.Point(527, 206)
+        Me.priceTB.Location = New System.Drawing.Point(533, 206)
         Me.priceTB.Name = "priceTB"
         Me.priceTB.ReadOnly = True
         Me.priceTB.Size = New System.Drawing.Size(251, 38)
@@ -384,9 +393,9 @@ Partial Class Form1
         '
         Me.calcButton.BackColor = System.Drawing.Color.LightGreen
         Me.calcButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.calcButton.Location = New System.Drawing.Point(527, 276)
+        Me.calcButton.Location = New System.Drawing.Point(533, 281)
         Me.calcButton.Name = "calcButton"
-        Me.calcButton.Size = New System.Drawing.Size(258, 83)
+        Me.calcButton.Size = New System.Drawing.Size(234, 69)
         Me.calcButton.TabIndex = 32
         Me.calcButton.Text = "Calculate"
         Me.calcButton.UseVisualStyleBackColor = False
@@ -395,10 +404,10 @@ Partial Class Form1
         '
         Me.spaceLabel.AutoSize = True
         Me.spaceLabel.BackColor = System.Drawing.Color.IndianRed
-        Me.spaceLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.spaceLabel.Location = New System.Drawing.Point(23, 391)
+        Me.spaceLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.8!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.spaceLabel.Location = New System.Drawing.Point(16, 390)
         Me.spaceLabel.Name = "spaceLabel"
-        Me.spaceLabel.Size = New System.Drawing.Size(755, 51)
+        Me.spaceLabel.Size = New System.Drawing.Size(763, 52)
         Me.spaceLabel.TabIndex = 33
         Me.spaceLabel.Text = "Not enough space for selected items"
         Me.spaceLabel.Visible = False
@@ -492,7 +501,7 @@ Partial Class Form1
         Me.PictureBox5.BackColor = System.Drawing.SystemColors.ControlDarkDark
         Me.PictureBox5.Location = New System.Drawing.Point(249, 3)
         Me.PictureBox5.Name = "PictureBox5"
-        Me.PictureBox5.Size = New System.Drawing.Size(10, 372)
+        Me.PictureBox5.Size = New System.Drawing.Size(10, 369)
         Me.PictureBox5.TabIndex = 42
         Me.PictureBox5.TabStop = False
         '
