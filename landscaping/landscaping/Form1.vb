@@ -38,20 +38,25 @@
             Else
                 spaceLabel.Visible = True
             End If
-        ElseIf CheckBox2.Checked = True Then
+        End If
+        If CheckBox2.Checked = True Then
             If area > 2000 Then
                 area -= 2000
                 price += 2500
             Else
                 spaceLabel.Visible = True
             End If
-        ElseIf CheckBox3.Checked = True Then
+        End If
+        If CheckBox3.Checked = True Then
             price += 2000
-        ElseIf CheckBox4.Checked = True Then
+        End If
+        If CheckBox4.Checked = True Then
             price += 1000
-        ElseIf CheckBox5.Checked = True Then
+        End If
+        If CheckBox5.Checked = True Then
             price += 1250
-        ElseIf CheckBox6.Checked = True Then
+        End If
+        If CheckBox6.Checked = True Then
             price += 5000
         End If
 
