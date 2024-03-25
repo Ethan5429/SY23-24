@@ -363,38 +363,42 @@ Partial Class Form1
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(540, 161)
+        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.Location = New System.Drawing.Point(527, 161)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(41, 16)
+        Me.Label9.Size = New System.Drawing.Size(91, 36)
         Me.Label9.TabIndex = 31
         Me.Label9.Text = "Price:"
         '
         'priceTB
         '
-        Me.priceTB.Location = New System.Drawing.Point(543, 191)
+        Me.priceTB.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.priceTB.Location = New System.Drawing.Point(527, 206)
         Me.priceTB.Name = "priceTB"
         Me.priceTB.ReadOnly = True
-        Me.priceTB.Size = New System.Drawing.Size(100, 22)
+        Me.priceTB.Size = New System.Drawing.Size(251, 38)
         Me.priceTB.TabIndex = 30
         Me.priceTB.Text = "0"
         '
         'calcButton
         '
-        Me.calcButton.Location = New System.Drawing.Point(543, 240)
+        Me.calcButton.BackColor = System.Drawing.Color.LightGreen
+        Me.calcButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.calcButton.Location = New System.Drawing.Point(527, 276)
         Me.calcButton.Name = "calcButton"
-        Me.calcButton.Size = New System.Drawing.Size(81, 23)
+        Me.calcButton.Size = New System.Drawing.Size(258, 83)
         Me.calcButton.TabIndex = 32
         Me.calcButton.Text = "Calculate"
-        Me.calcButton.UseVisualStyleBackColor = True
+        Me.calcButton.UseVisualStyleBackColor = False
         '
         'spaceLabel
         '
         Me.spaceLabel.AutoSize = True
         Me.spaceLabel.BackColor = System.Drawing.Color.IndianRed
         Me.spaceLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.spaceLabel.Location = New System.Drawing.Point(15, 391)
+        Me.spaceLabel.Location = New System.Drawing.Point(23, 391)
         Me.spaceLabel.Name = "spaceLabel"
-        Me.spaceLabel.Size = New System.Drawing.Size(763, 52)
+        Me.spaceLabel.Size = New System.Drawing.Size(755, 51)
         Me.spaceLabel.TabIndex = 33
         Me.spaceLabel.Text = "Not enough space for selected items"
         Me.spaceLabel.Visible = False
@@ -583,7 +587,7 @@ Partial Class Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 478)
+        Me.ClientSize = New System.Drawing.Size(800, 469)
         Me.Controls.Add(Me.PictureBox8)
         Me.Controls.Add(Me.PictureBox7)
         Me.Controls.Add(Me.Label23)
