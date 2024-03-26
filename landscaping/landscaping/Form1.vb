@@ -76,4 +76,112 @@
         End If
         priceTB.Text = price.ToString("C2")
     End Sub
+
+    Private Sub RadioButton1_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton1.CheckedChanged
+        pbFloor.BackColor = Color.DarkGray
+    End Sub
+
+    Private Sub RadioButton2_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton2.CheckedChanged
+        pbFloor.BackColor = Color.Tan
+    End Sub
+
+    Private Sub RadioButton3_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton3.CheckedChanged
+        pbFloor.BackColor = Color.LightGreen
+    End Sub
+
+    Private Sub RadioButton4_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton4.CheckedChanged
+        pbFloor.BackColor = Color.LimeGreen
+    End Sub
+
+    Private Sub NumericUpDown4_ValueChanged(sender As Object, e As EventArgs) Handles NumericUpDown4.ValueChanged
+        If NumericUpDown4.Value >= 1 Then
+            pbTree.Visible = True
+        Else
+            pbTree.Visible = False
+        End If
+    End Sub
+
+    Private Sub NumericUpDown1_ValueChanged(sender As Object, e As EventArgs) Handles NumericUpDown1.ValueChanged
+        If NumericUpDown1.Value >= 1 Then
+            pbSP.Visible = True
+        Else
+            pbSP.Visible = False
+        End If
+    End Sub
+
+    Private Sub NumericUpDown2_ValueChanged(sender As Object, e As EventArgs) Handles NumericUpDown2.ValueChanged
+        If NumericUpDown2.Value >= 1 Then
+            pbMP.Visible = True
+        Else
+            pbMP.Visible = False
+        End If
+    End Sub
+
+    Private Sub NumericUpDown3_ValueChanged(sender As Object, e As EventArgs) Handles NumericUpDown3.ValueChanged
+        If NumericUpDown3.Value >= 1 Then
+            pbLP.Visible = True
+        Else
+            pbLP.Visible = False
+        End If
+    End Sub
+
+    Private Sub CheckBox3_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox3.CheckedChanged
+        If CheckBox3.Checked Or NumericUpDown1.Value >= 1 Then
+            pbSP.Visible = True
+        Else
+            pbSP.Visible = False
+        End If
+
+        If CheckBox3.Checked Or NumericUpDown2.Value >= 1 Then
+            pbMP.Visible = True
+        Else
+            pbMP.Visible = False
+        End If
+
+        If CheckBox3.Checked Or NumericUpDown3.Value >= 1 Then
+            pbLP.Visible = True
+        Else
+            pbLP.Visible = False
+        End If
+    End Sub
+
+    Private Sub CheckBox1_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox1.CheckedChanged
+        If CheckBox1.Checked Then
+            pbPool.Visible = True
+        Else
+            pbPool.Visible = False
+        End If
+    End Sub
+
+    Private Sub CheckBox2_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox2.CheckedChanged
+        If CheckBox2.Checked Then
+            pbBasket.Visible = True
+        Else
+            pbBasket.Visible = False
+        End If
+    End Sub
+
+    Private Sub CheckBox4_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox4.CheckedChanged
+        If CheckBox4.Checked Then
+            pbPlay.Visible = True
+        Else
+            pbPlay.Visible = False
+        End If
+    End Sub
+
+    Private Sub CheckBox5_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox5.CheckedChanged
+        If CheckBox5.Checked Then
+            pbFire.Visible = True
+        Else
+            pbFire.Visible = False
+        End If
+    End Sub
+
+    Private Sub CheckBox6_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox6.CheckedChanged
+        If CheckBox6.Checked Then
+            pbHot.Visible = True
+        Else
+            pbHot.Visible = False
+        End If
+    End Sub
 End Class

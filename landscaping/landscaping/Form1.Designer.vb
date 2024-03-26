@@ -75,6 +75,16 @@ Partial Class Form1
         Me.Label23 = New System.Windows.Forms.Label()
         Me.PictureBox7 = New System.Windows.Forms.PictureBox()
         Me.PictureBox8 = New System.Windows.Forms.PictureBox()
+        Me.pbFloor = New System.Windows.Forms.PictureBox()
+        Me.pbTree = New System.Windows.Forms.PictureBox()
+        Me.pbSP = New System.Windows.Forms.PictureBox()
+        Me.pbMP = New System.Windows.Forms.PictureBox()
+        Me.pbLP = New System.Windows.Forms.PictureBox()
+        Me.pbBasket = New System.Windows.Forms.PictureBox()
+        Me.pbPool = New System.Windows.Forms.PictureBox()
+        Me.pbHot = New System.Windows.Forms.PictureBox()
+        Me.pbPlay = New System.Windows.Forms.PictureBox()
+        Me.pbFire = New System.Windows.Forms.PictureBox()
         CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NumericUpDown2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NumericUpDown3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -87,6 +97,16 @@ Partial Class Form1
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbFloor, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbTree, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbSP, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbMP, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbLP, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbBasket, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbPool, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbHot, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbPlay, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbFire, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'widthTB
@@ -126,7 +146,7 @@ Partial Class Form1
         'RadioButton2
         '
         Me.RadioButton2.AutoSize = True
-        Me.RadioButton2.Location = New System.Drawing.Point(432, 13)
+        Me.RadioButton2.Location = New System.Drawing.Point(441, 13)
         Me.RadioButton2.Name = "RadioButton2"
         Me.RadioButton2.Size = New System.Drawing.Size(60, 20)
         Me.RadioButton2.TabIndex = 4
@@ -137,7 +157,7 @@ Partial Class Form1
         'RadioButton3
         '
         Me.RadioButton3.AutoSize = True
-        Me.RadioButton3.Location = New System.Drawing.Point(561, 13)
+        Me.RadioButton3.Location = New System.Drawing.Point(584, 13)
         Me.RadioButton3.Name = "RadioButton3"
         Me.RadioButton3.Size = New System.Drawing.Size(64, 20)
         Me.RadioButton3.TabIndex = 5
@@ -148,7 +168,7 @@ Partial Class Form1
         'RadioButton4
         '
         Me.RadioButton4.AutoSize = True
-        Me.RadioButton4.Location = New System.Drawing.Point(680, 13)
+        Me.RadioButton4.Location = New System.Drawing.Point(712, 13)
         Me.RadioButton4.Name = "RadioButton4"
         Me.RadioButton4.Size = New System.Drawing.Size(98, 20)
         Me.RadioButton4.TabIndex = 6
@@ -235,7 +255,7 @@ Partial Class Form1
         '
         Me.PictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
-        Me.PictureBox2.Location = New System.Drawing.Point(412, 39)
+        Me.PictureBox2.Location = New System.Drawing.Point(421, 39)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(100, 65)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -246,7 +266,7 @@ Partial Class Form1
         '
         Me.PictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), System.Drawing.Image)
-        Me.PictureBox3.Location = New System.Drawing.Point(543, 39)
+        Me.PictureBox3.Location = New System.Drawing.Point(566, 39)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(100, 65)
         Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -257,7 +277,7 @@ Partial Class Form1
         '
         Me.PictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.PictureBox4.Image = CType(resources.GetObject("PictureBox4.Image"), System.Drawing.Image)
-        Me.PictureBox4.Location = New System.Drawing.Point(679, 39)
+        Me.PictureBox4.Location = New System.Drawing.Point(711, 39)
         Me.PictureBox4.Name = "PictureBox4"
         Me.PictureBox4.Size = New System.Drawing.Size(100, 65)
         Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -344,7 +364,7 @@ Partial Class Form1
         'CheckBox6
         '
         Me.CheckBox6.AutoSize = True
-        Me.CheckBox6.Location = New System.Drawing.Point(274, 321)
+        Me.CheckBox6.Location = New System.Drawing.Point(277, 322)
         Me.CheckBox6.Name = "CheckBox6"
         Me.CheckBox6.Size = New System.Drawing.Size(77, 20)
         Me.CheckBox6.TabIndex = 27
@@ -373,7 +393,7 @@ Partial Class Form1
         '
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(527, 161)
+        Me.Label9.Location = New System.Drawing.Point(527, 158)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(91, 36)
         Me.Label9.TabIndex = 31
@@ -385,7 +405,7 @@ Partial Class Form1
         Me.priceTB.Location = New System.Drawing.Point(533, 206)
         Me.priceTB.Name = "priceTB"
         Me.priceTB.ReadOnly = True
-        Me.priceTB.Size = New System.Drawing.Size(251, 38)
+        Me.priceTB.Size = New System.Drawing.Size(286, 38)
         Me.priceTB.TabIndex = 30
         Me.priceTB.Text = "0"
         '
@@ -393,9 +413,9 @@ Partial Class Form1
         '
         Me.calcButton.BackColor = System.Drawing.Color.LightGreen
         Me.calcButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.calcButton.Location = New System.Drawing.Point(533, 281)
+        Me.calcButton.Location = New System.Drawing.Point(533, 276)
         Me.calcButton.Name = "calcButton"
-        Me.calcButton.Size = New System.Drawing.Size(234, 69)
+        Me.calcButton.Size = New System.Drawing.Size(286, 74)
         Me.calcButton.TabIndex = 32
         Me.calcButton.Text = "Calculate"
         Me.calcButton.UseVisualStyleBackColor = False
@@ -405,9 +425,9 @@ Partial Class Form1
         Me.spaceLabel.AutoSize = True
         Me.spaceLabel.BackColor = System.Drawing.Color.IndianRed
         Me.spaceLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.8!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.spaceLabel.Location = New System.Drawing.Point(16, 390)
+        Me.spaceLabel.Location = New System.Drawing.Point(14, 390)
         Me.spaceLabel.Name = "spaceLabel"
-        Me.spaceLabel.Size = New System.Drawing.Size(763, 52)
+        Me.spaceLabel.Size = New System.Drawing.Size(755, 51)
         Me.spaceLabel.TabIndex = 33
         Me.spaceLabel.Text = "Not enough space for selected items"
         Me.spaceLabel.Visible = False
@@ -416,7 +436,7 @@ Partial Class Form1
         '
         Me.Label10.AutoSize = True
         Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(274, 107)
+        Me.Label10.Location = New System.Drawing.Point(265, 108)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(117, 16)
         Me.Label10.TabIndex = 34
@@ -427,7 +447,7 @@ Partial Class Form1
         '
         Me.Label11.AutoSize = True
         Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.Location = New System.Drawing.Point(404, 107)
+        Me.Label11.Location = New System.Drawing.Point(401, 108)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(117, 16)
         Me.Label11.TabIndex = 35
@@ -438,7 +458,7 @@ Partial Class Form1
         '
         Me.Label12.AutoSize = True
         Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.Location = New System.Drawing.Point(535, 107)
+        Me.Label12.Location = New System.Drawing.Point(545, 108)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(117, 16)
         Me.Label12.TabIndex = 36
@@ -449,7 +469,7 @@ Partial Class Form1
         '
         Me.Label13.AutoSize = True
         Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label13.Location = New System.Drawing.Point(667, 107)
+        Me.Label13.Location = New System.Drawing.Point(689, 108)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(125, 16)
         Me.Label13.TabIndex = 37
@@ -510,7 +530,7 @@ Partial Class Form1
         Me.PictureBox6.BackColor = System.Drawing.SystemColors.ControlDarkDark
         Me.PictureBox6.Location = New System.Drawing.Point(12, 134)
         Me.PictureBox6.Name = "PictureBox6"
-        Me.PictureBox6.Size = New System.Drawing.Size(773, 10)
+        Me.PictureBox6.Size = New System.Drawing.Size(830, 10)
         Me.PictureBox6.TabIndex = 43
         Me.PictureBox6.TabStop = False
         '
@@ -579,7 +599,7 @@ Partial Class Form1
         Me.PictureBox7.BackColor = System.Drawing.SystemColors.ControlDarkDark
         Me.PictureBox7.Location = New System.Drawing.Point(12, 365)
         Me.PictureBox7.Name = "PictureBox7"
-        Me.PictureBox7.Size = New System.Drawing.Size(773, 10)
+        Me.PictureBox7.Size = New System.Drawing.Size(826, 10)
         Me.PictureBox7.TabIndex = 50
         Me.PictureBox7.TabStop = False
         '
@@ -592,11 +612,129 @@ Partial Class Form1
         Me.PictureBox8.TabIndex = 51
         Me.PictureBox8.TabStop = False
         '
+        'pbFloor
+        '
+        Me.pbFloor.BackColor = System.Drawing.Color.Transparent
+        Me.pbFloor.Location = New System.Drawing.Point(-15, 613)
+        Me.pbFloor.Name = "pbFloor"
+        Me.pbFloor.Size = New System.Drawing.Size(880, 101)
+        Me.pbFloor.TabIndex = 52
+        Me.pbFloor.TabStop = False
+        '
+        'pbTree
+        '
+        Me.pbTree.Image = CType(resources.GetObject("pbTree.Image"), System.Drawing.Image)
+        Me.pbTree.Location = New System.Drawing.Point(13, 461)
+        Me.pbTree.Name = "pbTree"
+        Me.pbTree.Size = New System.Drawing.Size(99, 157)
+        Me.pbTree.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.pbTree.TabIndex = 53
+        Me.pbTree.TabStop = False
+        Me.pbTree.Visible = False
+        '
+        'pbSP
+        '
+        Me.pbSP.BackColor = System.Drawing.Color.ForestGreen
+        Me.pbSP.Location = New System.Drawing.Point(92, 596)
+        Me.pbSP.Name = "pbSP"
+        Me.pbSP.Size = New System.Drawing.Size(10, 22)
+        Me.pbSP.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.pbSP.TabIndex = 54
+        Me.pbSP.TabStop = False
+        Me.pbSP.Visible = False
+        '
+        'pbMP
+        '
+        Me.pbMP.BackColor = System.Drawing.Color.ForestGreen
+        Me.pbMP.Location = New System.Drawing.Point(108, 573)
+        Me.pbMP.Name = "pbMP"
+        Me.pbMP.Size = New System.Drawing.Size(12, 45)
+        Me.pbMP.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.pbMP.TabIndex = 55
+        Me.pbMP.TabStop = False
+        Me.pbMP.Visible = False
+        '
+        'pbLP
+        '
+        Me.pbLP.BackColor = System.Drawing.Color.ForestGreen
+        Me.pbLP.Location = New System.Drawing.Point(126, 547)
+        Me.pbLP.Name = "pbLP"
+        Me.pbLP.Size = New System.Drawing.Size(29, 71)
+        Me.pbLP.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.pbLP.TabIndex = 56
+        Me.pbLP.TabStop = False
+        Me.pbLP.Visible = False
+        '
+        'pbBasket
+        '
+        Me.pbBasket.Image = CType(resources.GetObject("pbBasket.Image"), System.Drawing.Image)
+        Me.pbBasket.Location = New System.Drawing.Point(654, 493)
+        Me.pbBasket.Name = "pbBasket"
+        Me.pbBasket.Size = New System.Drawing.Size(188, 136)
+        Me.pbBasket.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.pbBasket.TabIndex = 57
+        Me.pbBasket.TabStop = False
+        Me.pbBasket.Visible = False
+        '
+        'pbPool
+        '
+        Me.pbPool.Image = CType(resources.GetObject("pbPool.Image"), System.Drawing.Image)
+        Me.pbPool.Location = New System.Drawing.Point(158, 547)
+        Me.pbPool.Name = "pbPool"
+        Me.pbPool.Size = New System.Drawing.Size(148, 72)
+        Me.pbPool.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.pbPool.TabIndex = 58
+        Me.pbPool.TabStop = False
+        Me.pbPool.Visible = False
+        '
+        'pbHot
+        '
+        Me.pbHot.Image = CType(resources.GetObject("pbHot.Image"), System.Drawing.Image)
+        Me.pbHot.Location = New System.Drawing.Point(305, 547)
+        Me.pbHot.Name = "pbHot"
+        Me.pbHot.Size = New System.Drawing.Size(103, 72)
+        Me.pbHot.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.pbHot.TabIndex = 59
+        Me.pbHot.TabStop = False
+        Me.pbHot.Visible = False
+        '
+        'pbPlay
+        '
+        Me.pbPlay.Image = CType(resources.GetObject("pbPlay.Image"), System.Drawing.Image)
+        Me.pbPlay.Location = New System.Drawing.Point(519, 516)
+        Me.pbPlay.Name = "pbPlay"
+        Me.pbPlay.Size = New System.Drawing.Size(137, 103)
+        Me.pbPlay.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.pbPlay.TabIndex = 60
+        Me.pbPlay.TabStop = False
+        Me.pbPlay.Visible = False
+        '
+        'pbFire
+        '
+        Me.pbFire.Image = CType(resources.GetObject("pbFire.Image"), System.Drawing.Image)
+        Me.pbFire.Location = New System.Drawing.Point(411, 536)
+        Me.pbFire.Name = "pbFire"
+        Me.pbFire.Size = New System.Drawing.Size(101, 93)
+        Me.pbFire.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.pbFire.TabIndex = 61
+        Me.pbFire.TabStop = False
+        Me.pbFire.Visible = False
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 469)
+        Me.ClientSize = New System.Drawing.Size(853, 685)
+        Me.Controls.Add(Me.pbFire)
+        Me.Controls.Add(Me.pbPlay)
+        Me.Controls.Add(Me.pbHot)
+        Me.Controls.Add(Me.pbPool)
+        Me.Controls.Add(Me.pbBasket)
+        Me.Controls.Add(Me.pbLP)
+        Me.Controls.Add(Me.pbMP)
+        Me.Controls.Add(Me.pbSP)
+        Me.Controls.Add(Me.pbTree)
+        Me.Controls.Add(Me.pbFloor)
         Me.Controls.Add(Me.PictureBox8)
         Me.Controls.Add(Me.PictureBox7)
         Me.Controls.Add(Me.Label23)
@@ -663,6 +801,16 @@ Partial Class Form1
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbFloor, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbTree, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbSP, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbMP, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbLP, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbBasket, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbPool, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbHot, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbPlay, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbFire, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -720,4 +868,14 @@ Partial Class Form1
     Friend WithEvents Label23 As Label
     Friend WithEvents PictureBox7 As PictureBox
     Friend WithEvents PictureBox8 As PictureBox
+    Friend WithEvents pbFloor As PictureBox
+    Friend WithEvents pbTree As PictureBox
+    Friend WithEvents pbSP As PictureBox
+    Friend WithEvents pbMP As PictureBox
+    Friend WithEvents pbLP As PictureBox
+    Friend WithEvents pbBasket As PictureBox
+    Friend WithEvents pbPool As PictureBox
+    Friend WithEvents pbHot As PictureBox
+    Friend WithEvents pbPlay As PictureBox
+    Friend WithEvents pbFire As PictureBox
 End Class
