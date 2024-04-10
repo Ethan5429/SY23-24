@@ -24,29 +24,52 @@
         <br><br>
 
         <!-- Floor type options -->
-        <label>Floor Type:</label><br>
-        <label><input type="radio" name="floorType" value="gravel" onchange="calculate()"> Gravel <img src="(IMAGE HERE)"> ($2 per sq ft)</label><br>
-        <label><input type="radio" name="floorType" value="rock" onchange="calculate()"> Rock <img src="(IMAGE HERE)"> ($5 per sq ft)</label><br>
-        <label><input type="radio" name="floorType" value="grass" onchange="calculate()"> Grass <img src="(IMAGE HERE)"> ($1 per sq ft)</label><br>
-        <label><input type="radio" name="floorType" value="fakegrass" onchange="calculate()"> Fake Grass <img src="(IMAGE HERE)"> ($10 per sq ft)</label><br>
-        <br>
+        <label><b>Floor Type:</b></label><br>
+
+        <!-- Gravel -->
+        <label>
+            <input type="radio" name="floorType" value="gravel" onchange="calculate()">Gravel <br>
+            <img src="../img/GravelFloor.jpg"> <br> ($2 per sq ft)
+        </label> <br> <br>
+        <!-- Rock -->
+        <label>
+            <input type="radio" name="floorType" value="rock" onchange="calculate()"> Rock <br>
+            <img src="../img/RockFloor.jpg"> <br> ($5 per sq ft)
+        </label> <br> <br>
+        <!-- Grass -->
+        <label>
+            <input type="radio" name="floorType" value="grass" onchange="calculate()"> Grass <br>
+            <img src="../img/RealGrass.jpeg"> <br> ($1 per sq ft)
+        </label> <br> <br>
+        <!-- Fake Grass -->
+        <label>
+            <input type="radio" name="floorType" value="fakegrass" onchange="calculate()"> Fake Grass <br>
+            <img src="../img/FakeGrass.jpg"> <br> ($10 per sq ft)
+        </label> <br> <br>
 
         <!-- Backyard items options -->
-        <label>Backyard Items:</label>
-        <div>
-            <!-- Pool -->
-            <label><input type="checkbox" id="pool" onchange="calculate()"> Pool <img src="(IMAGE HERE)"> ($50,000)</label><br>
-            <!-- Basketball court -->
-            <label><input type="checkbox" id="basketballCourt" onchange="calculate()"> Basketball Court <img src="(IMAGE HERE)"> ($2,500)</label><br>
-            <!-- Garden -->
-            <label><input type="checkbox" id="garden" onchange="calculate()"> Garden <img src="(IMAGE HERE)"> ($2,000)</label><br>
-            <!-- Playground -->
-            <label><input type="checkbox" id="playground" onchange="calculate()"> Playground <img src="(IMAGE HERE)"> ($1,000)</label><br>
-            <!-- Firepit -->
-            <label><input type="checkbox" id="firepit" onchange="calculate()"> Firepit <img src="(IMAGE HERE)"> ($1,250)</label><br>
-            <!-- Hot tub -->
-            <label><input type="checkbox" id="hottub" onchange="calculate()"> Hot Tub <img src="(IMAGE HERE)"> ($5,000)</label><br>
-        </div>
+        <label><b>Backyard Items:</b></label><br>
+
+        <!-- Pool -->
+        <label>
+        <input type="checkbox" id="pool" onchange="calculate()"> Pool <br>
+        <img src="../img/Pool.png"> <br> ($50,000)</label> <br> <br>
+        <!-- Basketball court -->
+        <label>
+        <input type="checkbox" id="basketballCourt" onchange="calculate()"> Basketball Court <br>
+        <img src="../img/BasketballCourt.png"> <br> ($2,500)</label> <br> <br>
+        <!-- Garden -->
+        <label><input type="checkbox" id="garden" onchange="calculate()"> Garden <br>
+        <img src="../img/Garden.jpeg"> <br> ($2,000)</label> <br> <br>
+        <!-- Playground -->
+        <label><input type="checkbox" id="playground" onchange="calculate()"> Playground <br>
+        <img src="../img/Playground.png"> <br> ($1,000)</label> <br> <br>
+        <!-- Firepit -->
+        <label><input type="checkbox" id="firepit" onchange="calculate()"> Firepit <br>
+        <img src="../img/Firepit.png"> <br> ($1,250)</label> <br> <br>
+        <!-- Hot tub -->
+        <label><input type="checkbox" id="hottub" onchange="calculate()"> Hot Tub <br>
+        <img src="../img/HotTub.png"> <br> ($5,000)</label> <br> <br>
         <br>
 
         <label>Area:</label>

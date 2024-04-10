@@ -1,6 +1,10 @@
-﻿.navbar {
+﻿img {
+    width: 100px
+}
+
+.navbar {
     overflow: hidden;
-    background-color: #333;
+    background-color: #294a2e;
     position: fixed;
     top: 0;
     width: 100%;
