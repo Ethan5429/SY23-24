@@ -8,15 +8,18 @@
 </head>
 <body>
 
-    <!-- Navigation Bar -->
+    <!-- Navigation Bar with Banner -->
     <div class="navbar">
+        <div class="banner">
+            <h1 class="title" onclick="toggleSpin()">Landscaping Calculator</h1>
+        </div>
         <a href="Calculator.html">Calculator</a>
         <a href="AboutUs.html">About Us</a>
         <a href="Testimonials.html">Testimonials</a>
     </div>
 
     <!-- Main Content -->
-    <div style="margin-top: 40px; padding: 20px;">
+    <div style="margin-top: 130px; padding: 20px;">
         <label for="width">Width:</label>
         <input type="number" id="width" onchange="calculate()">
         <label for="length">Length:</label>
@@ -52,24 +55,34 @@
 
         <!-- Pool -->
         <label>
-        <input type="checkbox" id="pool" onchange="calculate()"> Pool <br>
-        <img src="../img/Pool.png"> <br> ($50,000)</label> <br> <br>
+            <input type="checkbox" id="pool" onchange="calculate()"> Pool <br>
+            <img src="../img/Pool.png"> <br> ($50,000)
+        </label> <br> <br>
         <!-- Basketball court -->
         <label>
-        <input type="checkbox" id="basketballCourt" onchange="calculate()"> Basketball Court <br>
-        <img src="../img/BasketballCourt.png"> <br> ($2,500)</label> <br> <br>
+            <input type="checkbox" id="basketballCourt" onchange="calculate()"> Basketball Court <br>
+            <img src="../img/BasketballCourt.png"> <br> ($2,500)
+        </label> <br> <br>
         <!-- Garden -->
-        <label><input type="checkbox" id="garden" onchange="calculate()"> Garden <br>
-        <img src="../img/Garden.jpeg"> <br> ($2,000)</label> <br> <br>
+        <label>
+            <input type="checkbox" id="garden" onchange="calculate()"> Garden <br>
+            <img src="../img/Garden.jpeg"> <br> ($2,000)
+        </label> <br> <br>
         <!-- Playground -->
-        <label><input type="checkbox" id="playground" onchange="calculate()"> Playground <br>
-        <img src="../img/Playground.png"> <br> ($1,000)</label> <br> <br>
+        <label>
+            <input type="checkbox" id="playground" onchange="calculate()"> Playground <br>
+            <img src="../img/Playground.png"> <br> ($1,000)
+        </label> <br> <br>
         <!-- Firepit -->
-        <label><input type="checkbox" id="firepit" onchange="calculate()"> Firepit <br>
-        <img src="../img/Firepit.png"> <br> ($1,250)</label> <br> <br>
+        <label>
+            <input type="checkbox" id="firepit" onchange="calculate()"> Firepit <br>
+            <img src="../img/Firepit.png"> <br> ($1,250)
+        </label> <br> <br>
         <!-- Hot tub -->
-        <label><input type="checkbox" id="hottub" onchange="calculate()"> Hot Tub <br>
-        <img src="../img/HotTub.png"> <br> ($5,000)</label> <br> <br>
+        <label>
+            <input type="checkbox" id="hottub" onchange="calculate()"> Hot Tub <br>
+            <img src="../img/HotTub.png"> <br> ($5,000)
+        </label> <br> <br>
         <br>
 
         <label>Area:</label>
@@ -132,6 +145,13 @@
         }
     </script>
 
+    <script>
+        // Function to toggle the 'clicked' class for spinning effect
+        function toggleSpin() {
+            var title = document.querySelector('.title');
+            title.classList.toggle('clicked');
+        }
+    </script>
+
 </body>
 </html>
-x`
